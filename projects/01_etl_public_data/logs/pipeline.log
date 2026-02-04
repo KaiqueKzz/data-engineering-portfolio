@@ -1,0 +1,11 @@
+2026-02-04 15:08:21 | INFO | pipeline | === PIPELINE START ===
+2026-02-04 15:08:21 | INFO | extract | Starting extract from Open-Meteo API
+2026-02-04 15:08:22 | INFO | extract | Extract finished successfully. Rows: 168
+2026-02-04 15:08:22 | INFO | transform | Starting transform
+2026-02-04 15:08:22 | INFO | transform | Transform finished. Dropped rows: 0. Final rows: 168
+2026-02-04 15:08:22 | INFO | load | Starting load to Parquet
+2026-02-04 15:08:22 | INFO | load | Load finished. File saved at: C:\Users\Anjun\Desktop\data-engineering-portfolio\projects\01_etl_public_data\data\processed\weather.parquet
+2026-02-04 15:08:22 | INFO | duckdb_queries | Starting DuckDB analytics
+2026-02-04 15:08:22 | INFO | duckdb_queries | DuckDB query executed successfully
+2026-02-04 15:08:22 | INFO | duckdb_queries | Query result rows: 7
+2026-02-04 15:08:22 | INFO | pipeline | === PIPELINE END (SUCCESS) ===
