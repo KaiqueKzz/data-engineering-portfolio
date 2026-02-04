@@ -4,8 +4,8 @@ from logger import get_logger
 
 logger = get_logger(__name__)
 
-DB_PATH = "projects/01_etl_public_data/data/processed/weather.duckdb"
-PARQUET_PATH = "projects/01_etl_public_data/data/processed/weather.parquet"
+DB_PATH = "projects/01_etl_public_data/lake/gold/weather.duckdb"
+PARQUET_PATH = "projects/01_etl_public_data/lake/gold/weather_gold.parquet"
 
 def run_queries():
     try:
