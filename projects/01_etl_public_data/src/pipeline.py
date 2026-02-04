@@ -11,18 +11,18 @@ logger = get_logger("pipeline")
 def run():
     logger.info("=== PIPELINE START ===")
 
-    # BRONZE
     df_bronze = extract_weather()
+
+    if df_bronze.empty:
+        logger.info("No new data to process. Pipeline finished.")
+        return
+
     load_bronze(df_bronze)
 
-    # SILVER
     df_silver = transform_weather(df_bronze)
     load_silver(df_silver)
 
-    # GOLD (camada analítica)
     load_gold(df_silver)
-
-    # SQL Analytics
     run_queries()
 
     logger.info("=== PIPELINE END (SUCCESS) ===")

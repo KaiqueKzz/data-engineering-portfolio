@@ -17,3 +17,8 @@ data/
 logs/
 **/logs/
 *.log
+
+# State / checkpoints
+state/
+**/state/
+*.json
