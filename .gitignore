@@ -13,3 +13,7 @@ data/
 
 .vscode/
 .idea/
+
+logs/
+**/logs/
+*.log
